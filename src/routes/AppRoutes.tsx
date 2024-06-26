@@ -1,17 +1,22 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Home from '../pages/Home';
-import Error404 from '../pages/Error404';
-import Products from '../pages/Products';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "../pages/Home";
+import Error404 from "../pages/Error404";
+import Products from "../pages/Products";
+import Categories from "../pages/Categorias";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Home />,
     errorElement: <Error404 />,
   },
   {
-    path: '/products',
+    path: "/products",
     element: <Products />,
+  },
+  {
+    path: "/categories",
+    element: <Categories />,
   },
 ]);
 
